@@ -24,7 +24,7 @@ function setup() {
 	tSide1 = new Dustbin(500,610,20,100);
 	tSide2 = new Dustbin(700,610,20,100);
 
-	ground = Bodies.rectangle(width/2, 650, width, 10 , {isStatic:true} );
+	ground = Bodies.rectangle(width/2, height-35, width, 10 , {isStatic:true} );
  	World.add(world, ground);
 
 
@@ -42,19 +42,16 @@ function draw() {
   tBottom.display();
   tSide1.display();
   tSide2.display();
-
-  keyPressed();
-  drawSprites();
- 
-}
-
-function keyPressed() {
+	
 	if (keyCode === UP_ARROW) {
 	   
 		Matter.Body.applyForce(ball.body,ball.body.position,{x:85,y:-85});
 	
 	 }
-   }
+
+  drawSprites();
+ 
+}
 
 
 
