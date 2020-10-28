@@ -24,6 +24,7 @@ class Paper {
 
         var pos = this.body.postion;
         push();
+        translate(pos.x,pos.y);
         rectMode(CENTER);
         fill("pink");
         ellipse(this.x,this.y,this.diameter);
