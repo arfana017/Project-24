@@ -22,7 +22,7 @@ class Paper {
 
     display() {
 
-        var pos = this.body.postion;
+        var pos = this.body.position;
         push();
         translate(pos.x,pos.y);
         rectMode(CENTER);
