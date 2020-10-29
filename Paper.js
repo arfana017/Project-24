@@ -27,7 +27,7 @@ class Paper {
         translate(pos.x,pos.y);
         rectMode(CENTER);
         fill("pink");
-        ellipse(this.x,this.y,this.diameter,this.diameter);
+        ellipse(0,0,this.diameter,this.diameter);
         pop();
 
     }
