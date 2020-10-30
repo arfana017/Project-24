@@ -12,7 +12,7 @@ function preload()
 }
 
 function setup() {
-//chganges Made
+
 	createCanvas(1600, 700);
 
 	groundSprite=createSprite(width/2, 690, width,10);
@@ -48,7 +48,7 @@ function draw() {
   tSide1.display();
   tSide2.display();
 
- // keyPressed();
+  keyPressed();
   drawSprites();
  
 }
